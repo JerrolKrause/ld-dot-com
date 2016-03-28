@@ -11,9 +11,9 @@ You will need the following things properly installed on your computer. If they 
 
 Once Node.js is installed, open up terminal on Mac or command on PC and run the following commands:
 
-* `npm install -g bower` (Installs Bower)
-* `npm install -g grunt-cli`  (Installs Grunt)
-* `npm install -g yo`  (Installs Yeoman)
+* `npm install -g bower` - Installs Bower
+* `npm install -g grunt-cli` - Installs Grunt
+* `npm install -g yo` - 0Installs Yeoman
 
 If you are planning on using Sass (which you are of course), you will also need Ruby and Compass.
 
@@ -23,8 +23,9 @@ If you are planning on using Sass (which you are of course), you will also need 
 ## Installation
 
 * Navigate to your projects folder
-* `git clone https://github.com/JerrolKrause/ld-angular-bp.git`
-* change into the new directory
+* `git clone https://github.com/JerrolKrause/ld-angular-bp.git` - Clone repository to your location machine
+* `ren ld-angular-bp new-project-name` - Rename 'ld-angular-bp' to your new project name
+* `cd new-project-name` - Change into the new directory
 * `npm install && bower install` - Install app dependencies
 
 ## Running / Development
