@@ -1,0 +1,14 @@
+[{
+	"manager"   :{
+	    "name"    : "Wendi King",
+	    "title"   : "Sr. Account Manager",
+	    "phone"   : "(949) 707-9582",
+	    "email"   : "wking@loandepot.com"
+	},
+	"banker"    :{
+	    "name"    : "Rupa Miller",
+	    "title"   : "Sr. Mortgage Banker",
+	    "phone"   : "(949) 707-1324",
+	    "email"   : "rmiller@loandepot.com"
+	}
+}]

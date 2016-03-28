@@ -1,0 +1,32 @@
+/*
+Masterpage Stylesheet
+*/
+
+//Header & Nav
+.navbar{background-color:#fff;padding-top:15px;border:0;border-bottom:1px solid #e7e7e7;border-radius:0;}
+.navbar-header{
+	background-color:#fff;
+	.navbar-brand{height:auto;text-align:center;padding-right: 0px;}
+
+	//Dropdown menu
+	.navbar-toggle{
+		border-color: $interact;background-color:$interact;color:#fff;
+			&:hover, &:active, &:focus{border-color: $interact;background-color:$interact;color:#fff;}
+		.icon-bar{background-color:#fff;}
+
+		&.collapsed{
+			background-color:#fff;color:$interact;
+			.icon-bar{background-color: $interact;}
+		}
+	}
+
+}
+.navbar-collapse{
+	border-top: 0;
+	.nav .active{
+			color:#fff!important;background-color:$interact!important;
+			.glyphicon {color:#fff!important;}
+		
+	}
+}
+

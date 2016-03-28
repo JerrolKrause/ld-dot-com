@@ -1,0 +1,18 @@
+/*
+	SASS Variables
+*/
+
+$ld-green		: #a4cd27;
+$ld-purple		: #572a8a;
+$ld-grey		: #707070;
+
+//Interactive/Link color
+$interact		: $ld-green;
+
+@mixin interact-bg(){
+	color:#fff;
+	background: $interact;
+	background: -moz-linear-gradient(top, $interact 0%, #78ad3c 100%);
+	background: -webkit-linear-gradient(top, $interact 0%,#78ad3c 100%);
+	background: linear-gradient(to bottom, $interact 0%,#78ad3c 100%);
+}
