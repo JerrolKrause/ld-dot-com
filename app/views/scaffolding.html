@@ -1,0 +1,34 @@
+<div class="container">
+	<h1>Angular Scaffolds &amp; References</h1>
+	<p>A random collection of useful Angular scaffolds and boilerplate code.</p>
+
+	<hr/>
+
+	<h2>Angular Resource and Mocks Example</h2>
+	 <div class="alert alert-info" role="alert">
+
+        <div class="alert alert-warning" ng-show="status == 'warning'">Please enter a message.</div>
+        <div class="alert alert-danger" ng-show="status == 'error'">Error sending message, please contact customer service.</div>
+        <div class="alert alert-success" ng-show="status == 'success'">Message sent successfully</div>
+
+        <div class="input-group" style="margin-bottom:0px;">
+            <form ng-submit="addMessage()">
+                <div class="input-group">
+                    <input placeholder="Type message here..." type="text" class="form-control" value="" ng-model="message.content"/>
+                    <span class="input-group-btn">
+                        <button class="btn btn-default btn-interact" type="submit"><span class="glyphicon glyphicon-share-alt"></span>Send</button>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+	<div ng-repeat="message in messages">
+		{{message.message}}
+	</div>
+
+
+	<hr/>
+
+
+</div>
+
