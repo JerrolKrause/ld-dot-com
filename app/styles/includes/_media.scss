@@ -1,0 +1,23 @@
+/*
+	Custom Media Queries
+*/
+
+//Tiny screens only
+@media (max-width: $screen-xs-max) {
+
+}
+
+//Small screens only
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+
+}
+
+//Medium screens only
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) { 
+
+}
+
+//Large screens only
+@media (min-width: $screen-lg-min) { 
+
+}

@@ -13,7 +13,7 @@ Once Node.js is installed, open up terminal on Mac or command on PC and run the 
 
 * `npm install -g bower` - Installs Bower
 * `npm install -g grunt-cli` - Installs Grunt
-* `npm install -g yo` - 0Installs Yeoman
+* `npm install -g yo` - Installs Yeoman
 
 If you are planning on using Sass (which you are of course), you will also need Ruby and Compass.
 

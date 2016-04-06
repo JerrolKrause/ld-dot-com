@@ -5,8 +5,9 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 //Global SCSS file
 @import "includes/variables"; // SASS Variables
-@import "includes/nav";    // Masterpage
+@import "includes/nav";       // Navigation
 @import "includes/layout";    // Masterpage
+@import "includes/media";    // Custo media queries
 
 //Page specific stylesheets
 //@import "pages/sample"; 

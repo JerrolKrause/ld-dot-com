@@ -1,12 +1,13 @@
 <div class="container">
 
-	<h1>Angular Scaffolds &amp; References</h1>
-	<p>A random collection of useful Angular scaffolds and boilerplate code.</p>
-	<hr/>
+    <h1>Angular Scaffolds &amp; References</h1>
+    <p>A random collection of useful Angular scaffolds and boilerplate code.</p>
+    <hr/>
 
 
-	<h2>Angular Resource and Mocks Example</h2>
-	 <div class="alert alert-info" role="alert">
+    <h2>Angular Resource and Mocks</h2>
+    <p>Useful for REST API interaction. Includes template cache for holding into get requests and only updating on put/post/delete.</p>
+    <div class="alert alert-info" role="alert">
         <div class="alert alert-warning" ng-show="status == 'warning'">Please enter a message.</div>
         <div class="alert alert-danger" ng-show="status == 'error'">Error sending message, please contact customer service.</div>
         <div class="alert alert-success" ng-show="status == 'success'">Message sent successfully</div>
@@ -21,14 +22,17 @@
             </form>
         </div>
     </div>
-	<div ng-repeat="message in messages">
-		{{message.message}}
-	</div>
-	<hr/>
+    <div ng-repeat="message in messages">
+        {{message.message}}
+    </div>
+    <hr/>
 
 
-	<h2>UI State Change</h2>
-		<hr/>
+    <h2>UI State Change</h2>
+    <p>Manage state/route changes including the URL.</p>
+    <a ui-sref=".list1">Show List 1</a> | <a ui-sref=".list2">Show List 2</a>
+    <div ui-view></div>
+    <hr/>
 
 
 </div>
