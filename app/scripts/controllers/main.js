@@ -8,6 +8,8 @@
  * Controller of the sdpApp
  */
 angular.module('sdpApp')
-  .controller('MainCtrl', function () {
+  .controller('MainCtrl', function ($scope) {
+
+      $scope.list = [];
 
   });

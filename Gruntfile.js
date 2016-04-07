@@ -466,8 +466,7 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
-    },
-
+    }
     
   });
 
@@ -497,8 +496,8 @@ module.exports = function (grunt) {
     'wiredep',
     'concurrent:test',
     'postcss',
-    'connect:test'//,
-    //'karma'
+    'connect:test',
+    'karma'
   ]);
 
   grunt.registerTask('build', [

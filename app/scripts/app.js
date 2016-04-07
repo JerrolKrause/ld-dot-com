@@ -1,4 +1,4 @@
-/*global DEBUG:true*/
+/*global DEBUG */
 'use strict';
 
 //Define default modules needed by app
