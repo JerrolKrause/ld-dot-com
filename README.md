@@ -17,14 +17,14 @@ Once Node.js is installed, open up terminal on Mac or command on PC and run the 
 
 If you are planning on using Sass (which you are of course), you will also need Ruby and Compass.
 
-* Download the latest version of [Ruby](http://rubyinstaller.org/downloads/).
+* Download and install the latest version of [Ruby](http://rubyinstaller.org/downloads/).
 * `gem install compass` - Install the compass gem
 
 ## Installation
 
 * Navigate to your projects folder
 * `git clone https://github.com/JerrolKrause/ld-boilerplate-angular.git` - Clone repository to your location machine
-* `ren ld-boilerplate-angular new-project-name` - Rename 'ld-angular-bp' to your new project name
+* `ren ld-boilerplate-angular new-project-name` - Rename 'ld-boilerplate-angular' to your new project name
 * `cd new-project-name` - Change into the new directory
 * `npm install && bower install` - Install app dependencies
 

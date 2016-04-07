@@ -86,7 +86,6 @@ angular
 
             //When the route has started to changed
             $rootScope.$on('$stateChangeStart', function () {
-
                 //If the hamburger menu is open, reset it to it's collapsed state
                 $('.navbar-toggle').addClass('collapsed');
                 $('.navbar-collapse').slideUp('fast', function () {
