@@ -316,7 +316,17 @@ module.exports = function (grunt) {
     //     }
     //   }
     // },
-    // uglify: {
+    uglify: {
+        options: {
+            compress: {
+                //drop_console: true,
+                global_defs: {
+                    'DEBUG': false
+                },
+                dead_code: true
+            }
+        }
+    },
     //   dist: {
     //     files: {
     //       '<%= yeoman.dist %>/scripts/scripts.js': [
@@ -457,23 +467,7 @@ module.exports = function (grunt) {
         singleRun: true
       }
     },
-    
-    //http://www.itnotes.de/anguljarjs/js/frontend/development/2014/10/03/mocked-backend-with-angularjs/
-     processhtml: {
-      options: {
-        commentMarker: 'process'
-      },
-      dist: {
-        files: [
-          {
-            expand: true,
-            cwd: '<%= yeoman.dist %>',
-            src: ['*.html', 'views/{,*/}*.html'],
-            dest: '<%= yeoman.dist %>'
-          }
-        ]
-      }
-    }
+
     
   });
 
@@ -521,7 +515,6 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
     'filerev',
-    'processhtml',
     'usemin',
     'htmlmin'
   ]);

@@ -26,7 +26,6 @@
     "grunt-svgmin": "^2.0.0",
     "grunt-usemin": "^3.0.0",
     "grunt-wiredep": "^2.0.0",
-    "grunt-processhtml": "^0.3.3",
     "jit-grunt": "^0.9.1",
     "time-grunt": "^1.0.0",
     "jshint-stylish": "^1.0.0"

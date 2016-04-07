@@ -7,12 +7,12 @@
  * # contacts
  * Service in the sdpApp.
  */
-angular.module('ngMockDev', ['sdpApp', 'ngMockE2E'])
+angular.module('ngMockDev', ['ngMockE2E'])
         //Sample http/rest API backend
         .run(function ($httpBackend) {
 
             //Don't use get requests for templates/partials
-            $httpBackend.whenGET(/views/).passThrough();
+            $httpBackend.whenGET(/views|_dev/).passThrough();
 
             var messages = [
                 {'name': 'Martin Testco', 'isCustomer': true, 'date': 'Today', 'new': true, 'message': 'Secure Document Exchange user Martin Testco has requested a call back from you. Please call back the borrower as soon as possible.'},
@@ -34,10 +34,3 @@ angular.module('ngMockDev', ['sdpApp', 'ngMockE2E'])
             });
 
         });//end $httpBackend
-        
-//Automatically add ngMock to the app if it is present. This will not require an ng-app or controller call
-if (angular.mock) {
-    angular.element(document).ready(function () {
-        angular.bootstrap(document, ['ngMockDev']);
-    });
-}

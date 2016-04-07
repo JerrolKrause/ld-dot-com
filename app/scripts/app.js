@@ -1,13 +1,21 @@
+/*global DEBUG:true*/
 'use strict';
 
-//Automatically add this app to the document without requiring an ng-app call
-(function () {
-    if (!angular.mock) {
-        angular.element(document).ready(function () {
-            angular.bootstrap(document, ['sdpApp']);
-        });
-    }
-})();
+//Define default modules needed by app
+angular.modulesDefault = ['ngAnimate','ngCookies','ngResource','ngSanitize','ngTouch','ui.router'];
+
+//Dev environment only
+if (DEBUG) {
+    console.log('DEV/DEBUG mode enabled.');
+    //Add ngMocks module
+    angular.modulesDefault.push('ngMockDev');
+}
+
+//Now attach main app to document
+angular.element(document).ready(function () {
+    angular.bootstrap(document, ['sdpApp']);
+});
+
 
 /**
  * @ngdoc overview
@@ -18,14 +26,7 @@
  * Main module of the application.
  */
 angular
-        .module('sdpApp', [
-            'ngAnimate',
-            'ngCookies',
-            'ngResource',
-            'ngSanitize',
-            'ngTouch',
-            'ui.router'
-        ])
+        .module('sdpApp', angular.modulesDefault)
         .config(function ($stateProvider, $urlRouterProvider) {
 
             // Now set up the states/routes
@@ -42,25 +43,7 @@ angular
                         metaTitle: 'Home',
                         metaDescription: 'This is the homepage'
                     })
-                    .state('scaffolds', {
-                        url: '/scaffolds',
-                        templateUrl: 'views/scaffolding.html',
-                        controller: 'ScaffoldsCtrl',
-                        metaTitle: 'Angular Scaffolds & References',
-                        metaDescription: 'A random collection of useful Angular scaffolds and boilerplate code.'
-                    })
-                    .state('scaffolds.list1', {
-                        url: '/1',
-                        templateUrl: 'views/partials/scaffolding.list1.html',
-                        metaTitle: 'List #1',
-                        metaDescription: 'Meta description for list #1'
-                    })
-                    .state('scaffolds.list2', {
-                        url: '/2',
-                        templateUrl: 'views/partials/scaffolding.list2.html',
-                        metaTitle: 'List #2',
-                        metaDescription: 'Meta description for list #2'
-                    })
+
                     .state('404', {
                         url: '/page-not-found',
                         templateUrl: 'views/page-not-found.html',
@@ -68,6 +51,29 @@ angular
                         metaDescription: 'Unable to find the page you are looking for.'
                     });
 
+            //Dev environment only
+            if (DEBUG) {
+                $stateProvider
+                        .state('scaffolds', {
+                            url: '/scaffolds',
+                            templateUrl: '_dev/views/scaffolding.html',
+                            controller: 'ScaffoldsCtrl',
+                            metaTitle: 'Angular Scaffolds & References',
+                            metaDescription: 'A random collection of useful Angular scaffolds and boilerplate code.'
+                        })
+                        .state('scaffolds.list1', {
+                            url: '/1',
+                            templateUrl: '_dev/views/scaffolding.list1.html',
+                            metaTitle: 'List #1',
+                            metaDescription: 'Meta description for list #1'
+                        })
+                        .state('scaffolds.list2', {
+                            url: '/2',
+                            templateUrl: '_dev/views/scaffolding.list2.html',
+                            metaTitle: 'List #2',
+                            metaDescription: 'Meta description for list #2'
+                        });
+            }
 
             //Redirect all 404 errors to this page
             //$urlRouterProvider.otherwise('/');
@@ -100,5 +106,4 @@ angular
                     $(this).removeClass('in').css('display', '');
                 });
             });
-        })//end $rootScope, $state
-        ;
+        });//end run

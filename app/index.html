@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
     <head>
         <meta charset="utf-8">
         <title ng-bind="metaTitle + ' | WEBSITE'"></title>
@@ -31,7 +30,10 @@
 
         <!-- Footer -->
         <div ng-include src="'views/partials/_footer.html'"></div>
-
+        
+        <!-- build:dev  -->
+        <div class="container"><hr/><a ui-sref="scaffolds" class="btn btn-success">Angular Scaffolds & Reference Code</a><hr/></div>
+        <!-- endbuild -->
         
         <!-- build:js(.) scripts/vendor.js -->
         <!-- bower:js -->
@@ -47,10 +49,10 @@
         <!-- endbower -->
         <!-- endbuild -->
         
-        <!-- process:remove | DEV ONLY VENDOR INCLUDES -->
-        <script>window.isDev = true;</script>
+        <!-- build:dev  -->
+        <script>DEBUG = true;</script>
         <script src="bower_components/angular-mocks/angular-mocks.js"></script>
-        <!-- /process -->
+        <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
@@ -58,11 +60,11 @@
         <script src="scripts/services/cacheresource.js"></script>
         <!-- endbuild -->
         
-        <!-- process:remove | DEV ONLY SCAFFOLDING + REFERENCES -->
-        <script src="scripts/_dev/scaffolding.mock.js"></script>
-        <script src="scripts/_dev/scaffolding.controller.js"></script>
-        <script src="scripts/_dev/scaffolding.service.js"></script>
-        <!-- /process -->
+        <!-- build:dev -->
+        <script src="_dev/scripts/scaffolding.mock.js"></script>
+        <script src="_dev/scripts/scaffolding.controller.js"></script>
+        <script src="_dev/scripts/scaffolding.service.js"></script>
+        <!-- endbuild -->
     </body>
 
 </html>
