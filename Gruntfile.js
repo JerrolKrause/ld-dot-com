@@ -456,7 +456,25 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
+    },
+    
+    //http://www.itnotes.de/anguljarjs/js/frontend/development/2014/10/03/mocked-backend-with-angularjs/
+     processhtml: {
+      options: {
+        commentMarker: 'process'
+      },
+      dist: {
+        files: [
+          {
+            expand: true,
+            cwd: '<%= yeoman.dist %>',
+            src: ['*.html', 'views/{,*/}*.html'],
+            dest: '<%= yeoman.dist %>'
+          }
+        ]
+      }
     }
+    
   });
 
 
@@ -503,6 +521,7 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
     'filerev',
+    'processhtml',
     'usemin',
     'htmlmin'
   ]);
@@ -513,4 +532,6 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+  
+  
 };
