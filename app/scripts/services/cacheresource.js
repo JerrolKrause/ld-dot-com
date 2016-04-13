@@ -40,7 +40,7 @@ angular.module('sdpApp')
                     'update': {method: 'PUT', interceptor: interceptor},
                     'save': {method: 'POST', interceptor: interceptor},
                     'remove': {method: 'DELETE', interceptor: interceptor},
-                    'delete': {method: 'DELETE', interceptor: interceptor},
+                    'delete': {method: 'DELETE', interceptor: interceptor}
                 });
 
                 var resource = $resource(url, paramDefaults, actions, options);
