@@ -1,0 +1,48 @@
+/*
+        Animations
+*/
+
+.show-hide {-webkit-transition:all linear 0.75s;transition:all linear 0.75s;}
+.show-hide.ng-hide {opacity:0;}
+
+
+.animate.ng-enter {
+    -webkit-transition-duration: 1000ms;
+    transition-duration: 1000ms;
+    opacity:0;
+    position:relative;
+    left:25px;
+    .animate2{
+        -webkit-transition-duration: 1000ms;
+        transition-duration: 1000ms;
+        position:relative;
+        left:25px;
+    }
+}
+
+.animate.ng-enter-active {
+    -webkit-transform:scale(1);
+    transform:scale(1);
+    opacity:1;
+    left:0px;
+    .animate2{
+        -webkit-transform:scale(1);
+        transform:scale(1);
+        left:0px;
+    }
+}
+
+.glyphicon.spinning {
+    -webkit-animation: spin2 1s infinite linear;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg); }
+    to { transform: scale(1) rotate(360deg); }
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}

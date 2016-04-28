@@ -100,6 +100,8 @@ angular
 
             //When the route has started to changed
             $rootScope.$on('$stateChangeStart', function () {
+                //Scroll to top on route change
+                window.scrollTo(0, 0);
                 //If the hamburger menu is open, reset it to it's collapsed state
                 $('.navbar-toggle').addClass('collapsed');
                 $('.navbar-collapse').slideUp('fast', function () {
