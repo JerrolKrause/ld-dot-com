@@ -4,7 +4,7 @@
 
 //Tiny screens only
 @media (max-width: $screen-xs-max) {
-
+    
 }
 
 //Small screens only
@@ -14,10 +14,10 @@
 
 //Medium screens only
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) { 
-
+    ul.nav li.dropdown:hover > ul.dropdown-menu {display: block;}
 }
 
 //Large screens only
 @media (min-width: $screen-lg-min) { 
-
+    ul.nav li.dropdown:hover > ul.dropdown-menu {display: block;}
 }

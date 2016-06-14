@@ -1,27 +1,215 @@
-<div class="container">
-  
-	 <div class="jumbotron">
-	  <h1>'Allo, 'Allo!</h1>
-	  <p class="lead">
-	    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-	    Always a pleasure scaffolding your apps.
-	  </p>
-	  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-	</div>
+<div id="homepage">
+    <div id="top">
+        <div class="container">
+            <h1>Lending made easy...your partner for life.</h1>
+            <h3 class="hidden-xs">$63+ Billion Funded.   1,700+ Loan Officers.   Lifetime Guarantee.</h3>
 
-	<div class="marketing">
-	  <h4>HTML5 Boilerplate</h4>
-	  <p>
-	    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-	  </p>
+            <div id="tabs">
+                
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#tab-refinance" aria-controls="tab-refinance" role="tab" data-toggle="tab">
+                            
+                            <h3><div class="icons icons-refi"></div>Refinance<span class="glyphicon glyphicon-plus pull-right visible-xs"></span></h3>
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+                            <h3><div class="icons icons-new-home"></div>New Home<span class="glyphicon glyphicon-plus pull-right visible-xs"></span></h3>
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
+                            <h3><div class="icons icons-personal-loans"></div>Personal Loans<span class="glyphicon glyphicon-plus pull-right visible-xs"></span></h3>
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">
+                            <h3><div class="icons icons-home-equity"></div>Home Equity<span class="glyphicon glyphicon-plus pull-right visible-xs"></span></h3>
+                        </a>
+                    </li>
+                </ul>
 
-	  <h4>Angular</h4>
-	  <p>
-	    AngularJS is a toolset for building the framework most suited to your application development.
-	  </p>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="tab-refinance">
+                        <div class="row">
+                            <div class="col-md-5 col-md-offset-1">
+                                <h3><span class="glyphicon glyphicon-ok"></span>No risk quote in minutes</h3>
+                                <h3><span class="glyphicon glyphicon-ok"></span>Fast, simple loan approvals</h3>
+                            </div>
+                            <div class="col-md-5">
+                                <h3><span class="glyphicon glyphicon-ok"></span>Low fixed rates, set payments</h3>
+                                <h3><span class="glyphicon glyphicon-ok"></span>No hidden fees</h3>
+                            </div>
+                        </div> 
+                        <a class="btn btn-main center-block">Get My Rate</a>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="profile">
+                        Some Content 2
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="messages">
+                        Some Content 3
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="settings">
+                        Some Content 4
+                    </div>
+                </div>
 
-	  <h4>Karma</h4>
-	  <p>Spectacular Test Runner for JavaScript.</p>
-	</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="middle">
+        <div class="container">
+            <h3 class="text-center lead">Our tools take the stress out of financial planning.</h3>
+
+            <ng-include src="'views/carousels/refinance.html'"/>
+            
+
+            <div class="row hide">
+                <div class="col-md-6">
+                    <a class="hp-box free-credit-score">
+                        <h2>Free Credit Score</h2>
+                        <h3>See your payment history and status of all Real Estate, Installment, and Revolving Credit Accounts. Offered free by loanDepot.com.</h3>
+                    </a>
+                    <a class="hp-box mortgage-calculator">
+                        <h2>Mortgage Calculator</h2>
+                        <h3>Calculate your mortgage in seconds using the loanDepot.com mortgage calculator.</h3>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a class="hp-box rate-alerts">
+                        <h2>Rate Alerts</h2>
+                        <h3>Use loanDepot.com to determine your ideal rate. Sign up for email alerts to be instantly notified when your rate is available.</h3>
+                    </a>
+                    <a class="hp-box live-current-quotes">
+                        <h2>Live Current Quotes</h2>
+                        <h3>View live current quotes of loan rates with our rate configurator. Start configuring now!</h3>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div id="park">
+        <div class="container text-center">
+
+            <div class="row">
+                <div class="col-md-12"><h2>Lifetime Guarantee.</h2></div>
+            </div>
+
+            <div class="row">
+                
+                <div class="col-md-3 hidden-xs">
+                    <img src="images/homepage/loan-officer.png" alt="loanDepot loan officer" width="253" height="254"/>
+                    <h3>George Taylor</h3>
+                    <p>Loan Officer, loanDepot</p>
+                </div>
+                
+                <div class="col-md-6 col-xs-12">
+                    <h3>After you refinance, loanDepot will waive lender fees and reimburse appraisal fees on any future refinance.</h3>
+                    <h3 class="hidden-xs"><strong>Result:</strong> Thousands in savings.</h3>
+                    <h3 class="hidden-xs"><strong>Case Study:</strong> Meet George and Joe</h3>
+
+                    <div class="row park-icons" >
+                        <div class="col-md-4 col-xs-4">
+                            <div class="icons icons-new-home"></div>
+                            <p><strong>1st Home</strong></p>
+                            <p>- 2010 -</p>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <div class="icons icons-refi"></div>
+                            <p><strong>Refinance</strong></p>
+                            <p>- 2016 -</p>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <div class="icons icons-dollar"></div>
+                            <p><strong>$4k Saved</strong></p>
+                            <p>- Over 6 Years -</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="col-md-3 hidden-xs">
+                    <img src="images/homepage/dad.png" alt="loanDepot client" width="253" height="254"/>
+                    <h3>Joe Campbell</h3>
+                    <p>Husband &amp; Father of Two</p>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+    
+
+    <div id="carousel-hp" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-hp" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-hp" data-slide-to="1"></li>
+        </ol>
+
+        <div class="carousel-inner text-center" role="listbox">
+            <div class="item active">
+                <div class="row">
+                    <div class="col-md-5 col-md-offset-1">
+                        <img src="images/homepage/carousel-placeholder.jpg" class="center-block"/>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="images/homepage/carousel-placeholder2.png" class="center-block"/>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="item">
+               <div class="row">
+                    <div class="col-md-5 col-md-offset-1">
+                        <img src="images/homepage/carousel-placeholder.jpg" class="center-block"/>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="images/homepage/carousel-placeholder2.png" class="center-block"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="left carousel-control" href="#carousel-hp" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-hp" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    
+
+    <div id="purple" class="text-center container-fluid">
+        <h3>Questions? <span class="hidden-xs">Loan experts are standing by!</span></h3>
+        <h1>888-983-3240</h1>
+        
+        <div class="row">
+            <div class="col-md-3 col-md-offset-3">
+                <a href="" class="btn btn-outline" id="appt">
+                    <img src="images/homepage/appointment.png"/>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="" class="btn btn-outline" id="chat">
+                    <img src="images/homepage/chat.png"/>
+                </a>
+            </div>
+        </div>
+    </div>
+
 
 </div>

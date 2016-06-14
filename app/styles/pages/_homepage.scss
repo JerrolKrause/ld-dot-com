@@ -1,0 +1,105 @@
+/*
+	Homepage
+*/
+
+
+#homepage{
+    h1{font-weight:bold;}
+    
+    #top{
+        background: url(../images/homepage/bg.jpg) no-repeat center center;min-height:600px;background-size:cover;padding-top:60px;padding-bottom:60px;text-align:center;
+        h1, h2, h3{color:#fff;}
+    }
+    
+    #tabs{
+        max-width:900px;margin:auto;
+        
+        .nav-tabs{
+            padding-top:40px;
+            li{width:25%;padding-top:5px;}
+            li:hover{
+                padding-top:0px;
+                 a:link, a:visited{padding-top:15px;}
+            }
+            a:link, a:visited{color:#fff;border-radius:0px;background: $ld-purple;border-color:$ld-purple-lt;border-bottom:7px solid $ld-purple-lt;margin-right:0px;}
+            .active a:link, .active a:visited{background:#7444af;border-bottom:7px solid $ld-green;}
+            h3{margin:0px;}
+        }
+        .tab-content{
+            background : rgba(255, 255, 255, 0.7);text-align:left;padding:40px;
+            h3{color:#000;margin-top:0px;margin-bottom:20px;font-size:21px;}
+            .glyphicon-ok{color:$ld-purple;margin-right:15px;}
+            .btn.btn-main{margin-top:20px;}
+        }
+    }
+    
+    #tabs-accordion{
+        text-align:left;
+        h3{padding:10px;padding-left:50px;margin:0px;position:relative;}
+        h3:hover{text-decoration:none;}
+        .icons{position: absolute;left: 10px;    top: 6px;}
+        .panel{background: rgba(255, 255, 255, 0.7);border:0px;margin-bottom:15px;}
+        .panel-heading{padding:0px;color:#fff;border-radius:0px;border:0px;background: $ld-purple;border-color:$ld-purple-lt;border:0px;}
+        .panel-body{
+            h3{color:#000;padding-left:0px;}
+        }
+    }
+    
+    #middle{
+        padding-top:20px; padding-bottom:40px;
+        .lead{margin-bottom:40px;font-size: 20px;}
+        a.hp-box{
+            display:block;border:1px solid #ccc;padding:40px;margin-bottom:25px;cursor:pointer;text-decoration:none;
+            &:hover{border-color:$ld-green;}
+            &.free-credit-score{min-height:247px;background: url('../images/homepage/free-credit-score.jpg') no-repeat bottom right;padding-right: 260px;}
+            &.rate-alerts{background: url('../images/homepage/rate-alerts.jpg') no-repeat center right;    padding-right: 220px;}
+            &.mortgage-calculator{background: url('../images/homepage/mortgage-calculator.png') no-repeat center left;padding-left:227px;}
+            &.live-current-quotes{background: url('../images/homepage/live-current-quotes.png') no-repeat center left;    padding-left: 230px;    min-height: 272px;}
+            h2{color:$ld-purple;margin:0px;margin-bottom:30px;}
+            h3{color:#000;margin:0px;font-size:18px;line-height: 32px;}
+        }
+    }
+    
+    #park{
+        background: url('../images/homepage/bg-park.jpg') no-repeat center center;min-height:780px;background-size:cover;color:#fff;padding-top:150px; padding-bottom:150px;
+        h2{font-size:60px;padding-bottom: 20px;margin-bottom: 75px;margin-top: 0; background: url('../images/homepage/border-green.png') no-repeat bottom center;}
+        .park-icons{padding-top:50px;}
+    }
+    
+    #carousel-hp{
+            .carousel-inner{;}
+    }
+    
+    #purple{
+        padding-top:70px;padding-bottom:80px; background: url('../images/homepage/bg-purple.png')  center center;color:#fff;
+        h1{margin-bottom:40px;}
+        .btn-outline{
+            display:block;border:1px solid $ld-purple-lt;font-size:24px;color:$ld-purple-lt;border-radius:0px;font-weight:bold;position:relative;margin-bottom:20px;line-height: 130px;
+            &:hover{background-color: rgba(112, 78, 165, 0.7)}
+        }
+    }
+    
+    
+
+    //Tiny screens only
+    @media (max-width: $screen-xs-max) {
+        #top h1{font-size:30px;margin-bottom: 40px;}
+        #top{padding-top:30px;min-height:auto;}
+        #park{
+            padding-top: 80px;padding-bottom: 60px;min-height: initial;
+            h2{font-size: 30px;margin-bottom: 30px;}
+        }
+        #purple h1{font-size:44px;}
+    }
+
+    //Medium screens only
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) { 
+        #top h1{background: url('../images/homepage/lending-made-easy.png')  center center no-repeat;overflow:hidden;text-indent:-9999px;}
+    }
+
+    //Large screens only
+    @media (min-width: $screen-lg-min) { 
+        #top h1{background: url('../images/homepage/lending-made-easy.png')  center center no-repeat;overflow:hidden;text-indent:-9999px;}
+    }
+
+}

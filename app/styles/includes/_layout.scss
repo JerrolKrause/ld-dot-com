@@ -6,7 +6,97 @@ Masterpage Stylesheet
 
 
 //Content Styling
-a:link{color:$interact;}
-
-.glyphicon{margin-right:10px;}
+.purple{color:$ld-purple;}
+a, a:link{color:$interact;}
+.glyphicon{margin-right:5px;}
 h1 .glyphicon, h2 .glyphicon{margin-right:15px;font-size:0.8em;}
+.progress{border-radius: 0px 0px 6px 6px;}
+img{max-width:100%;}
+
+
+.icons{
+    width:30px;height:30px;display:block;background: url('../images/icons/loan-types.png') no-repeat 0px 0px;margin: auto;margin-bottom: 4px;
+    &.icons-refi{background-position:0px 0px;}
+    &.icons-new-home{background-position:-38px 5px;}
+    &.icons-personal-loans{background-position:-77px 2px;}
+    &.icons-home-equity{background-position:-116px 2px;}
+    &.icons-dollar{background-position:-160px 2px;}
+}
+
+
+.btn{
+    &.btn-main, &.btn-primary{color:#fff;border-radius:0;background: $ld-green;text-align:center;line-height:70px;max-width:320px;font-weight:bold;font-size:24px;text-transform: uppercase;}
+}
+
+
+.carousel {
+    .carousel-control{width: 5%;color:#ccc;}
+    .carousel-indicators li{border-color:transparent;background-color:#ccc;}
+    .carousel-indicators li.active{background-color:$ld-purple;}
+}
+
+
+#carousel-refi{
+    border-radius1: 6px 6px 0px 0px;overflow:hidden;
+    input, .input-group-addon, .radio label{font-size:25px;}
+    p, .input-group{margin-bottom:20px;}
+    p{font-size:18px;}
+    
+    .carousel-inner{min-height:400px;background: url('../images/calc-bg-purple.jpg') no-repeat center center;background-size: cover;color:#fff;}
+    .carousel-control.left{border-radius1: 6px 0px 0px 0px;overflow:hidden;display:none;}
+    .carousel-control.right{border-radius1: 0px 6px 0px 0px;overflow:hidden;}
+    .item{min-height:400px;padding-top:30px;overflow:hidden;}
+    
+    .bg.glyphicon{position:absolute;opacity:0.1;color:#fff;font-size: 610px;}
+    #why .bg{font-size: 513px;top: -45px;left: -60px;}
+    #monthly .bg{font-size: 578px;top: -36px;left: -165px;}
+    #owe .bg{font-size: 499px;top: -48px;left: -60px;}
+    #worth .bg{font-size: 440px;top: 19px;left: 28px;}
+    #credit .bg{font-size: 417px; top: 35px; left: 25px;}
+    #zip .bg{font-size: 610px;top: -48px;left: -50px;}
+    #zip .bg{font-size: 610px;top: -48px;left: -50px;}
+    
+    input{font-size:25px;color:#000;padding:10px;border:1px solid #337ab7;}
+    .radio input[type="radio"]{top: 28px;}
+    .input-group-addon{background-color: #337ab7;color: #fff;border:0;}
+    
+    .item > h2 {font-size: 50px;margin:0px;margin-bottom:20px;padding:25px;text-shadow: 1px 1px #000;background-color: rgba(0,0,0, 0.2);}
+    h3{margin-bottom:10px;}
+    
+    .table{color:#000;}
+    .radio label{
+        padding: 20px;background: #337ab7;min-width:450px;color: #fff;border: 1px solid #fff;
+        input[type="radio"]{display:none;}
+        .glyphicon{margin-right:15px;position:relative;top:3px;}
+        &:hover{color: #a4cd27;}
+        &.active{color:#fff;background-color: #a4cd27;border-color:#fff;}
+    }
+    
+    .label-sm{
+        label{padding: 3px 20px;padding-left: 35px;}
+        input[type="radio"]{top: 13px;}
+    }
+    
+    .nav{
+        a:link, a:visited{color:#fff;padding-left: 62px;}
+        a:hover{background-color: #337ab7;color:#fff;}
+        .active .glyphicon{color:$ld-green;}
+    }
+    
+    .panel{
+        h3{margin:0px;}
+        .glyphicon.glyphicon-home{color:#337ab7}
+        .panel-body{
+            color:#000;
+            h2{margin:0px;}
+        }
+    }
+    
+    #user{
+        input{font-size:18px;}
+        .btn-main{line-height: 40px;}
+        .form-group {margin-bottom: 10px;}
+    }
+    
+    .ready{color: #a4cd27;opacity:1;}
+}

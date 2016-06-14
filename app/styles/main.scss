@@ -8,6 +8,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "includes/nav";       // Navigation
 @import "includes/layout";    // Masterpage
 @import "includes/media";    // Custo media queries
-@import "includes/animation";    // Custo media queries
+@import "includes/animation";    // Animation
+@import "includes/typography";    // Typography
+
 //Page specific stylesheets
-//@import "pages/sample"; 
+@import "pages/homepage"; 

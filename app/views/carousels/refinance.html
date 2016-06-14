@@ -1,0 +1,281 @@
+<div id="carousel-refi" class="carousel slide center-block" ng-controller="MainCtrl">
+    <ol class="carousel-indicators hide">
+        <li data-target="#carousel-refi" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-refi" data-slide-to="1"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+
+
+        <div class="item active" id="why">
+            <div class="bg glyphicon glyphicon-question-sign"></div>
+
+
+            <h2 class="text-center">Why do you want to refinance?</h2>
+            <div class="col-md-5 col-md-offset-4">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="lower"/>
+                        <span class="glyphicon glyphicon-circle-arrow-down"></span>Lower Payment
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="payoff"/>
+                        <span class="glyphicon glyphicon-home"></span>
+                        Pay Off Home Sooner
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="item" id="monthly">
+            <div class="bg glyphicon glyphicon-usd"></div>
+            <h2 class="text-center">What is your current monthly payment?</h2>
+            <div class="col-md-5 col-md-offset-5">
+
+                <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <input type="text" class="money" aria-label="Amount (to the nearest dollar)">
+                </div>
+
+                <p><span class="glyphicon glyphicon-question-sign"></span>Not sure? <a href="#">Skip this question.</a></p>
+            </div>
+        </div>
+
+        <div class="item" id="owe">
+            <div class="bg glyphicon glyphicon-home"></div>
+            <h2 class="text-center">How much do you currently owe on your home?</h2>
+            <div class="col-md-5 col-md-offset-5">
+                <p>
+                <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <input type="text" class="money" aria-label="Amount (to the nearest dollar)">
+                </div>
+                </p>
+            </div>
+        </div>
+
+        <div class="item" id="worth">
+            <div class="bg glyphicon glyphicon-briefcase"></div>
+            <h2 class="text-center">How much is your home worth today?</h2>
+            <div class="col-md-5 col-md-offset-5">
+                <p>
+                <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <input type="text" class="money" aria-label="Amount (to the nearest dollar)">
+                </div>
+                </p>
+            </div>
+        </div>
+
+        <div class="item" id="credit">
+            <div class="bg glyphicon glyphicon-credit-card"></div>
+            <h2 class="text-center">How would you describe your credit?</h2>
+            <div class="col-md-5 col-md-offset-5 label-sm">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                        720 or above
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                        620 - 719
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                        640 - 679
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                        580 - 639
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="item" id="zip">
+            <div class="bg glyphicon glyphicon-globe"></div>
+
+            <h2 class="text-center">What is the zip code of your home?</h2>
+            <div class="col-md-5 col-md-offset-5">
+                <p>
+                    <input type="text" class="" maxlength="5" style="width:50%;"/>
+                </p>
+            </div>
+        </div>
+
+        <div class="item">
+            <h2 class="text-center">Results</h2>
+
+            <ul class="nav nav-pills nav-stacked col-md-3">
+                <li class="active"><a href="#a" data-toggle="tab"><span class="glyphicon glyphicon-home"></span>30-Year Fixed</a></li>
+                <li><a href="#b" data-toggle="tab"><span class="glyphicon glyphicon-home"></span>5-Year Arm</a></li>
+                <li><a href="#c" data-toggle="tab"><span class="glyphicon glyphicon-home"></span>7-Year Arm</a></li>
+            </ul>
+
+            <div class="tab-content col-md-9">
+
+                <div class="tab-pane fade in active" id="a">
+
+                    <div class="col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading"><h3>Monthly Payment</h3></div>
+                            <div class="panel-body">
+                                <h2><span class="glyphicon glyphicon-home"></span><strong><sup>$</sup>1,141</strong></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading"><h3>Loan Information</h3></div>
+                            <table class="table table-striped">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Rate / APR</strong></td>
+                                        <td>3.625% / 3.838%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Closing Costs</strong></td>
+                                        <td><sup>$</sup>7,454</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Points</strong></td>
+                                        <td>1.75</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="b">
+
+                    <div class="col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading"><h3>Monthly Payment</h3></div>
+                            <div class="panel-body">
+                                <h2><span class="glyphicon glyphicon-home"></span><strong><sup>$</sup>1,038</strong></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading"><h3>Loan Information</h3></div>
+                            <table class="table table-striped">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Rate / APR</strong></td>
+                                        <td>2.875% / 3.517%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Closing Costs</strong></td>
+                                        <td><sup>$</sup>8,392</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Points</strong></td>
+                                        <td>2.125</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="c">
+
+                    <div class="col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading"><h3>Monthly Payment</h3></div>
+                            <div class="panel-body">
+                                <h2><span class="glyphicon glyphicon-home"></span><strong><sup>$</sup>1,071</strong></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading"><h3>Loan Information</h3></div>
+                            <table class="table table-striped">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Rate / APR</strong></td>
+                                        <td>3.125% / 3.553%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Closing Costs</strong></td>
+                                        <td><sup>$</sup>8,079</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Points</strong></td>
+                                        <td>2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="item" id="form">
+            <h2 class="text-center">Next Steps</h2>
+
+            <div class="col-md-5 col-md-offset-1">
+                <div class="panel panel-primary">
+                    <div class="panel-heading"><h3>Monthly Payment</h3></div>
+                    <div class="panel-body">
+                        <h2><span class="glyphicon glyphicon-home"></span><strong><sup>$</sup>1,071</strong></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div id="user">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="First Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Last Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-main">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <a class="left carousel-control" href="#carousel-refi" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-refi" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-success" id="progress" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+    </div>
+</div>
